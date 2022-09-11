@@ -1,3 +1,4 @@
+// block 6, task 5
 import java.util.Scanner;
 
 public class Task6 {

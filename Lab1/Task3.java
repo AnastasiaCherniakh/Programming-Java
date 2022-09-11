@@ -1,3 +1,4 @@
+// block 3, task 5
 import java.util.Scanner;
 import java.util.Random;
 
