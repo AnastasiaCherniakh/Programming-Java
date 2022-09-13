@@ -8,10 +8,18 @@ public class Task4 {
         Random rd = new Random();
         int m = 5;
         int n = 4;
+        int iEl = 0;
+        int jEl = 0;
+        int max = 0;
         int[][] arr = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 arr[i][j] = rd.nextInt(20)+ 1;
+                if(arr[i][j]>max) {
+                    max = arr[i][j];
+                    iEl = i;
+                    jEl = j;
+                }
                 System.out.print(arr[i][j] + "\t");
             }
 
@@ -21,11 +29,9 @@ public class Task4 {
 
         System.out.println("Enter k value: ");
         int k = scanner.nextInt();
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++){
-                if(i % 2 ==0 && j % 2 != 0) {
-                    arr[i][j]*=k;
-                }
+        for (int i = 0; i < iEl; i+=2) {
+            for (int j = 1; j < jEl; j+=2){
+                arr[i][j]*=k;
             }
         }
         System.out.println("--------------------------");
