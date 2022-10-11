@@ -21,8 +21,6 @@ public class Lab3_2 {
 
             graphics.drawLine(40, 30, 40, 300);
             graphics.drawLine(40, 300, 500, 300);
-
-
             graphics.setColor(Color.PINK);
             graphics.fillRect(170, 80, 80, 220);
             graphics.setColor(Color.BLUE);
@@ -38,7 +36,6 @@ public class Lab3_2 {
             graphics.drawString("60000$", 180, 70);
             graphics.drawString("70000$", 280, 40);
             graphics.drawString("65000$", 380, 50);
-
             graphics.setFont(headerFont);
             graphics.setColor(Color.RED);
             graphics.drawString("Дохід фірми за 4 квартали", 90, 20);
